@@ -1,0 +1,24 @@
+.parallax-container{
+    background: url('../../../public/Group.png') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    // padding: 25px;
+    background-attachment: fixed;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .parallax-box{
+        width: 70%;
+        
+        .h2-parallax{
+            font-size: 55px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}

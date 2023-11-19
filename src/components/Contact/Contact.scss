@@ -1,0 +1,42 @@
+form{
+    padding: 50px 0;
+    width: 100%;
+    .h2-contact{
+        text-align: center;
+        font-size: 50px;
+    }
+    .form-box{
+        width: 40%;
+        margin: 0 auto;
+        .div-input{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid #333;
+                margin-bottom: 10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            textarea{
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid #333;
+                margin-bottom: 10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .btn{
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            border:1px solid #333;
+            color: #fff;
+        }
+    }
+}
