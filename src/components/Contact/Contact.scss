@@ -37,6 +37,11 @@ form{
             background-color: #333;
             border:1px solid #333;
             color: #fff;
+            cursor: pointer;
         }
     }
+}
+.p-error{
+    font-size: 11px;
+    color: red;
 }
