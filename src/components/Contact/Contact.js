@@ -1,10 +1,20 @@
 
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import './Contact.scss';
 import emailjs from '@emailjs/browser';
+import { PopUp } from  'my-modal-component-4-op';
 
 export default function Contact() {
+
+    const [message] =  useState("Méssage envoyé !");
+    const [fontColor] =  useState('#333');
+    const [bgColorCross]=  useState('#333');
+    const [bgColorContainerModal]=  useState('#fff');  
+    const [opcityMainBg]=  useState(0.5); 
+    const [mainBgColor]=  useState('black'); 
+    const [popupShow, setPopupShow] =  useState(false);
+
   const form = useRef();
 
     const {
@@ -23,7 +33,8 @@ export default function Contact() {
       }, (error) => {
           console.log(error.text);
       });
-        console.log(data)
+       
+      setPopupShow(true);
     reset();
     }
 
@@ -33,6 +44,7 @@ export default function Contact() {
     return (
     
     <>
+    <PopUp  mainBgColor={mainBgColor}  opcityMainBg={opcityMainBg}  bgColorCross={bgColorCross}  bgColorContainerModal={bgColorContainerModal}  fontColor={fontColor}  message={message}  trigger={popupShow}  setTrigger={setPopupShow}/>
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
             <h2 className='h2-contact'>Contact</h2>
             <div className='form-box'>
