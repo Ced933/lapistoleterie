@@ -1,10 +1,12 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import './Contact.scss';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  
+  const form = useRef();
+
     const {
         register,
         formState: {errors},
@@ -12,7 +14,15 @@ export default function Contact() {
       } = useForm();
 
       console.log(errors)
-    const onSubmit = (data) => {
+    const onSubmit = (data,e) => {
+        e.preventDefault();
+
+    emailjs.sendForm('service_1tuqdcj', 'template_6pi4y9d', form.current, 'NK0MVO9hhX91I8pMo')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
         console.log(data)
     reset();
     }
@@ -23,10 +33,11 @@ export default function Contact() {
     return (
     
     <>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
             <h2 className='h2-contact'>Contact</h2>
             <div className='form-box'>
                 <div className='div-input'>
+                    {/* on récupère les données grâce à register, required nous aide à indiquer que l'utilisateur doit obligatoirement remplir ce champs   */}
                     <input  {...register('firstName', {required:true})} type='text' placeholder='Prénom' name='firstName' />
                     <p className='p-error'>
                     {errors.firstName?.type === "required" && "Le prénom est obligatoire"}
@@ -41,7 +52,7 @@ export default function Contact() {
                 </div>
 
                 <div className='div-input'>
-                    <input  
+                    <input  name='email'
                     placeholder="Email" type='mail'
                     {...register("email", {
                         required: true,
@@ -57,6 +68,7 @@ export default function Contact() {
 
                 <div className='div-input'>
                     <input
+                    name='number'
                     type="number"
                     placeholder='Téléphone'
                     {...register("number", {
