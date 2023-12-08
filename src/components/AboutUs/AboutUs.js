@@ -3,7 +3,6 @@ import './AboutUs.scss'
 import Data from '../../Data/data';
 
 export default function AboutUs () {
-    console.log(Data);
   return (
     <div>
         <div className='about-container'>

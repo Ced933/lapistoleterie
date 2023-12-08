@@ -1,0 +1,46 @@
+.gallery-container{
+    padding: 50px 0;
+    width: 100%;
+    border: 1px solid red;
+    .gallery-box{
+        width: 80%;
+
+        margin: 0 auto;
+        border: 1px solid blue;
+        .h2-gallery{
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        .grille{
+
+            column-count: 3;
+            column-width: 33%;
+            padding: 0 12px;
+            @media (max-width:991px){
+                column-count: 2;
+                column-width: 50%;
+
+            }
+            @media (max-width:480px){
+                column-count: 1;
+                column-width: 100%;
+
+
+            }
+            .div-img-caroussel{
+cursor: pointer;
+                .img-gallery{
+    
+                    width: 100%;
+                    margin-bottom: 12px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        transition: all 0.5s ease;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,11 +6,13 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import Parallax from '../../components/Parallax/Parallax';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+import Gallery from '../../components/Gallery/Gallery';
 export default function Home() {
   return (
     <>
         <Navigation/>
         <Header/>
+        <Gallery/>
         <AboutUs/>
         <Parallax/>
         <Contact/>
