@@ -21,7 +21,7 @@ export default function Gallery() {
     const [currentImg, setCurrentImg] = useState()
 
   return (
-    <div className='gallery-container'>
+    <div className='gallery-container' id='gallery'>
                 <Carrousel currentImg={currentImg} trigger={carrousel} setTrigger={setCarrousel} />
 
         <div className='gallery-box'>

@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     height: 80px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
     .nav-container{
         width: 80%;
         display: flex;
@@ -10,11 +13,15 @@
         .img-nav{
             width: 120px;
         }
-        .link-nav{
-            text-decoration: none;
-            color: #192B5A;
-            margin-left: 20px;
-            font-size: 13px;
+        .ul-list-link{
+            list-style: none;
+            display: flex;
+            .link-nav{
+                text-decoration: none;
+                color: #192B5A;
+                margin-left: 20px;
+                font-size: 13px;
+            }
         }
     }
 }

@@ -7,6 +7,7 @@ import Parallax from '../../components/Parallax/Parallax';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
 import Gallery from '../../components/Gallery/Gallery';
+import FAQ from '../../components/FAQ/FAQ';
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
         <Header/>
         <Gallery/>
         <AboutUs/>
+        <FAQ/>
         <Parallax/>
         <Contact/>
         <Footer/>

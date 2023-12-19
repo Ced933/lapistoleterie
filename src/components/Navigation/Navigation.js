@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Navigation.scss';
 
 export default function Navigation() {
@@ -8,11 +7,18 @@ export default function Navigation() {
         <div className='nav-container'>
             <img className='img-nav' src='./finallaps-01.png' />
 
-            <div>
-                <Link className='link-nav'>ABOUT US</Link>
-                <Link className='link-nav'>GALLERY</Link>
-                <Link className='link-nav'>CONTACT US</Link>
-            </div>
+            <ul className='ul-list-link'>
+              <li>
+                <a className='link-nav' href='#about'>About us </a>
+              </li>
+              <li>
+                <a className='link-nav' href='#gallery'>Gallery </a>
+              </li>
+              <li>
+                <a className='link-nav' href='#contactus'>Contact</a>
+              </li>
+          
+            </ul>
         </div>
     </nav>
   )

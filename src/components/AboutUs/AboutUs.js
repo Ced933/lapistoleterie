@@ -4,7 +4,7 @@ import Data from '../../Data/data';
 
 export default function AboutUs () {
   return (
-    <div>
+    <div id='about'>
         <div className='about-container'>
             <div className='div-img-about'>
 
