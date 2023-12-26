@@ -19,12 +19,16 @@
     }
     .div-description{
         width: 45%;
+        .h2-description{
+            color: #113f67;
+        }
         .ul-about{
             list-style: none;
             padding: 0;
             margin: 0;
             .li-about{
                 padding-top:15px ;
+                color:#113f67 ;
             }
         }
     }

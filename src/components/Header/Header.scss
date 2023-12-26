@@ -13,28 +13,28 @@
             font-size: 80px;
             
             margin: 0 auto;
-            color: #fff;
-            margin-bottom: 25px;
+            color: #e0ffcd;
+            margin-bottom: 20px;
         }
         .p-header{
             color: #fff;
             font-size: 20px;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
         .button-header{
-            background-color: #333;
+            background-color: #113f67;
             border: 1px solid #333;
             padding: 15px 20px;
-            color: #fff;
+            color: #e0ffcd;
             border-radius: 10px;
             font-size: 15px;
             text-decoration: none;
             cursor: pointer;
             transition: all 0.3s ease-in ;
             &:hover{
-                background-color: #fff;
-                border: 1px solid #fff;
-                color: #333;
+                background-color: #e0ffcd;
+                border: 1px solid #e0ffcd;
+                color: #113f67;
                 transition: all 0.3s ease-in ;
             }
         }

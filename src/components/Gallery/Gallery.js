@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Gallery.scss';
 import dataImg from '../../Data/dataImg';
 import Carrousel from '../Carrousel/Carrousel';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 export default function Gallery() {

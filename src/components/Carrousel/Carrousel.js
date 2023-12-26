@@ -3,7 +3,6 @@ import './Carrousel.scss'
 import { Link } from 'react-router-dom'
 export default function Carrousel({currentImg,trigger,setTrigger}) {
 
-    console.log(currentImg);
   return (trigger) ?( 
 
 

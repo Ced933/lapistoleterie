@@ -4,6 +4,7 @@ form{
     .h2-contact{
         text-align: center;
         font-size: 50px;
+        color: #113f67;
     }
     .form-box{
         width: 40%;
@@ -14,19 +15,25 @@ form{
             input{
                 padding: 10px 0;
                 border: none;
-                border-bottom: 1px solid #333;
+                border-bottom: 1px solid #113f67;
                 margin-bottom: 10px;
                 &:focus{
                     outline: none;
+                }
+                &::placeholder{
+                    color: #113f67;
                 }
             }
             textarea{
                 padding: 10px 0;
                 border: none;
-                border-bottom: 1px solid #333;
+                border-bottom: 1px solid #113f67;
                 margin-bottom: 10px;
                 &:focus{
                     outline: none;
+                }
+                &::placeholder{
+                    color: #113f67;
                 }
             }
         }
@@ -34,9 +41,9 @@ form{
             margin-top: 10px;
             width: 100%;
             padding: 10px;
-            background-color: #333;
-            border:1px solid #333;
-            color: #fff;
+            background-color: #113f67;
+            border:1px solid #113f67;
+            color: #e0ffcd;
             cursor: pointer;
         }
     }

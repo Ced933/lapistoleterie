@@ -1,0 +1,40 @@
+.error-content{
+    height: 90dvh;
+    width: 100%;
+    
+    background-color: #233142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .error-box{
+      text-align: center;
+      height: auto;
+        .h1-error{
+            font-size: 150px;
+            margin: 0;
+            padding: 0;
+            color:#e0ffcd;
+        }
+        .h3-error{
+            padding: 0;
+            font-size: 50px;
+            color:#fff;
+        }
+        .p-error{
+            font-size: 20px;
+            color: #fff;
+            // color:#e0ffcd;
+
+        }
+        .div-btn{
+            margin-top: 40px;
+            .btn-back{
+                background-color: #113f67;
+                color: #fff;
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

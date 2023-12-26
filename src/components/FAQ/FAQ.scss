@@ -4,33 +4,22 @@ margin: 50px 0;
     text-align: center;
     font-size: 50px;
     margin-bottom: 40px;
+    color:#113f67 ;
 }
     .dropdown-box{
     width: 70%;
     margin: 0 auto;
     
-        .dropdown-item{
-        width: 100%;
-        border: 1px solid #333;
-        border-radius: 5px;
-        .header-dropdown-item{
-            padding: 10px;
-            background-color: #333;
-            display: flex;
-            justify-content: space-between;
-            .h3-dropdown{
-                color: #fff;
-            }
-            .img-arrow{
-                cursor: pointer;
-            }
-        }
-        .content-dropdown-item{
-            padding: 10px;
-            opacity: 0;
-            transition: all 0.5s ease;
-
-        }
-        }
+ 
     }
 }
+
+// .content-dropdown-item{
+//     padding: 10px;
+//     // opacity: 0;
+//     // transition: all 0.5s ease;
+//     overflow: hidden;
+//     height: 0px;
+//     transition: opacity 0.3s ease;
+
+// }

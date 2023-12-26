@@ -17,7 +17,9 @@ export default function Navigation() {
               <li>
                 <a className='link-nav' href='#contactus'>Contact</a>
               </li>
-          
+              <li>
+                <a className='link-nav' href='#faq'>FAQ</a>
+              </li>
             </ul>
         </div>
     </nav>

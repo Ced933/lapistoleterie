@@ -12,7 +12,7 @@ export default function AboutUs () {
             </div>
 
             <div className='div-description'>
-                <h2>ARTISAN QUALIFIÉ ET DIPLÔMÉ </h2>
+                <h2 className='h2-description'>ARTISAN QUALIFIÉ ET DIPLÔMÉ </h2>
                 <div>
                     <ul className='ul-about'>
                         {
