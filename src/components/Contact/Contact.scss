@@ -22,6 +22,7 @@ form{
                 }
                 &::placeholder{
                     color: #113f67;
+                    text-transform: uppercase;
                 }
             }
             textarea{
@@ -34,6 +35,7 @@ form{
                 }
                 &::placeholder{
                     color: #113f67;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -44,6 +46,7 @@ form{
             background-color: #113f67;
             border:1px solid #113f67;
             color: #e0ffcd;
+            text-transform: uppercase;
             cursor: pointer;
         }
     }
