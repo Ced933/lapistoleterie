@@ -6,20 +6,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 756px) {
+        height: 60vh;
+       
+        }
     .header-box-describe{
         // border: 1px solid #000;
         width: 50%;
+        @media (max-width: 756px) {
+            width: 70%;
+           
+            }
         .h1-header{
             font-size: 80px;
             
             margin: 0 auto;
             color: #e0ffcd;
             margin-bottom: 20px;
+            @media (max-width: 756px) {
+                font-size: 40px;
+               
+                }
         }
         .p-header{
             color: #fff;
             font-size: 20px;
             margin-bottom: 40px;
+            @media (max-width: 756px) {
+                font-size: 15px;
+               
+                }
         }
         .button-header{
             background-color: #113f67;
@@ -37,6 +53,10 @@
                 color: #113f67;
                 transition: all 0.3s ease-in ;
             }
+            @media (max-width: 756px) {
+                display: none;
+               
+                }
         }
     }
 }
