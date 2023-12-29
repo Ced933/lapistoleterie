@@ -5,10 +5,18 @@ form{
         text-align: center;
         font-size: 50px;
         color: #113f67;
+        @media (max-width: 756px) {
+            font-size: 40px;
+           
+            }
     }
     .form-box{
         width: 40%;
         margin: 0 auto;
+        @media (max-width: 756px) {
+            width: 70%;
+           
+            }
         .div-input{
             display: flex;
             flex-direction: column;

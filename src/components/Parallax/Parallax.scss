@@ -2,7 +2,7 @@
     background: url('../../../public/Group.png') no-repeat;
     background-size: cover;
     height: 50vh;
-    // padding: 25px;
+ 
     background-attachment: fixed;
     background-position: center;
     
@@ -11,11 +11,19 @@
     align-items: center;
     .parallax-box{
         width: 70%;
+        @media (max-width: 756px) {
+            width: 80%;
+           
+            }
         
         .h2-parallax{
             font-size: 55px;
             color: #e0ffcd;
             margin-bottom: 20px;
+            @media (max-width: 756px) {
+                font-size: 25px;
+               
+                }
         }
         p{
             color: #fff;

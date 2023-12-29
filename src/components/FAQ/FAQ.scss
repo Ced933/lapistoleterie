@@ -1,25 +1,30 @@
 .faq-container{
 margin: 50px 0;
+@media (max-width: 756px) {
+    height: auto;
+   
+    }
+
 .faq-h2{
     text-align: center;
     font-size: 50px;
     margin-bottom: 40px;
     color:#113f67 ;
+    @media (max-width: 756px) {
+        
+        font-size: 40px;
+        }
+    
 }
     .dropdown-box{
     width: 70%;
     margin: 0 auto;
-    
+    @media (max-width: 756px) {
+        
+        width: 90%;
  
     }
 }
 
-// .content-dropdown-item{
-//     padding: 10px;
-//     // opacity: 0;
-//     // transition: all 0.5s ease;
-//     overflow: hidden;
-//     height: 0px;
-//     transition: opacity 0.3s ease;
 
-// }
+}
